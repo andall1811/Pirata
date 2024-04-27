@@ -1,0 +1,207 @@
+[gd_scene load_steps=43 format=3 uid="uid://cfvfi58atreos"]
+
+[ext_resource type="Texture2D" uid="uid://duouw1jyvfj1w" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/01.png" id="1_6nlvw"]
+[ext_resource type="Texture2D" uid="uid://b785wi1epsadg" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/02.png" id="2_enygq"]
+[ext_resource type="Texture2D" uid="uid://cukyvpv3xf57" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/03.png" id="3_ebnj7"]
+[ext_resource type="Texture2D" uid="uid://edaf6bwq4cbo" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/04.png" id="4_dh24i"]
+[ext_resource type="Texture2D" uid="uid://ci2umdm04t34e" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/05.png" id="5_vqoio"]
+[ext_resource type="Texture2D" uid="uid://2sbgnduhhiw2" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/06.png" id="6_3ktke"]
+[ext_resource type="Texture2D" uid="uid://nndss1s2jyiu" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_potion/07.png" id="7_q4e8m"]
+[ext_resource type="Texture2D" uid="uid://dou8unl7cgc0j" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/01.png" id="8_sb2i1"]
+[ext_resource type="Texture2D" uid="uid://bbefci7pyyrx6" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/02.png" id="9_dxkbj"]
+[ext_resource type="Texture2D" uid="uid://bbypex88kfn1f" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/03.png" id="10_5jnwo"]
+[ext_resource type="Texture2D" uid="uid://c5wajkeabe3q6" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/04.png" id="11_cl3nt"]
+[ext_resource type="Texture2D" uid="uid://i64vtinkeblq" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/05.png" id="12_xetd4"]
+[ext_resource type="Texture2D" uid="uid://bfne7gx8ibx88" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/06.png" id="13_wi44m"]
+[ext_resource type="Texture2D" uid="uid://dt5amy8iw3ceb" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_bottle/07.png" id="14_5h1j0"]
+[ext_resource type="Texture2D" uid="uid://6fwbvawxn31y" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/01.png" id="15_f1j5q"]
+[ext_resource type="Texture2D" uid="uid://bxnjat217jmln" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/02.png" id="16_f0xoa"]
+[ext_resource type="Texture2D" uid="uid://1o8htjwjm2pm" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/03.png" id="17_obwj5"]
+[ext_resource type="Texture2D" uid="uid://cc33cbf44pgsn" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/04.png" id="18_glnqq"]
+[ext_resource type="Texture2D" uid="uid://cww6avhyvmv5w" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/05.png" id="19_v52hu"]
+[ext_resource type="Texture2D" uid="uid://dsa5a1ehhengw" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/06.png" id="20_rauv1"]
+[ext_resource type="Texture2D" uid="uid://dkme4lcms7crn" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/jump_potion/07.png" id="21_61c1l"]
+[ext_resource type="Texture2D" uid="uid://cgc6clyoa81lm" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/potion_effect/01.png" id="22_k1oe6"]
+[ext_resource type="Texture2D" uid="uid://gnsvka6ktyhy" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/potion_effect/02.png" id="23_xc2km"]
+[ext_resource type="Texture2D" uid="uid://dk47xkvemmp6q" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/potion_effect/03.png" id="24_m88s8"]
+[ext_resource type="Texture2D" uid="uid://dkdgoo76rjnhx" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/potion_effect/04.png" id="25_a1utc"]
+[ext_resource type="Texture2D" uid="uid://bf5s5c4yeiv51" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/01.png" id="26_vhtjl"]
+[ext_resource type="Texture2D" uid="uid://jtp7e8kkccsx" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/02.png" id="27_cn8ry"]
+[ext_resource type="Texture2D" uid="uid://cf8py7b113ik2" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/03.png" id="28_qds75"]
+[ext_resource type="Texture2D" uid="uid://clhcn66ny1m41" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/04.png" id="29_3kpwq"]
+[ext_resource type="Texture2D" uid="uid://bpkccib7cktok" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/05.png" id="30_n0nn6"]
+[ext_resource type="Texture2D" uid="uid://cyrf4gs4vjr78" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/06.png" id="31_hgtth"]
+[ext_resource type="Texture2D" uid="uid://cvx1mvbgcg330" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/speed_potion/07.png" id="32_e71i2"]
+[ext_resource type="Texture2D" uid="uid://ylmprmmem6dk" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/01.png" id="33_2ucgi"]
+[ext_resource type="Texture2D" uid="uid://qn6pvutstpbo" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/02.png" id="34_ns4na"]
+[ext_resource type="Texture2D" uid="uid://31ylt8a5562y" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/03.png" id="35_0stpb"]
+[ext_resource type="Texture2D" uid="uid://cb2yadx4gy5tu" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/04.png" id="36_axbbf"]
+[ext_resource type="Texture2D" uid="uid://clrbhq86162jc" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/05.png" id="37_muyaj"]
+[ext_resource type="Texture2D" uid="uid://ctb1qi8nykt7o" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/06.png" id="38_0e6bs"]
+[ext_resource type="Texture2D" uid="uid://jgtf31any6wx" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/tree_potion/07.png" id="39_q3ndl"]
+[ext_resource type="Script" path="res://scenes/game/levels/objects/power_up/persistent_powerup.gd" id="40_eo1sy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wb3wn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6nlvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_enygq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ebnj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dh24i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vqoio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3ktke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_q4e8m")
+}],
+"loop": true,
+"name": &"blue_potion",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_sb2i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dxkbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5jnwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cl3nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xetd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wi44m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5h1j0")
+}],
+"loop": true,
+"name": &"green_bottle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_f1j5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_f0xoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_obwj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_glnqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_v52hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rauv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_61c1l")
+}],
+"loop": true,
+"name": &"jump_potion",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_k1oe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xc2km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_m88s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_a1utc")
+}],
+"loop": false,
+"name": &"pick_up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_vhtjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_cn8ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_qds75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3kpwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_n0nn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_hgtth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_e71i2")
+}],
+"loop": true,
+"name": &"speed_potion",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_2ucgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ns4na")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0stpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_axbbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_muyaj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_0e6bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_q3ndl")
+}],
+"loop": true,
+"name": &"tree_potion",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ipr5"]
+size = Vector2(14, 18)
+
+[node name="PowerUp" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_wb3wn")
+animation = &"jump_potion"
+script = ExtResource("40_eo1sy")
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="Area"]
+shape = SubResource("RectangleShape2D_5ipr5")
+
+[connection signal="body_entered" from="Area" to="." method="_on_area_body_entered"]

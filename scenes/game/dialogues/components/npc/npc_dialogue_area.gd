@@ -49,9 +49,9 @@ func _ready():
 func _unhandled_input(event):
 	if event.is_action_pressed(show_input_key) and character and not _dialogue_is_visible:
 		# If we press the key defined in "show_input_key" and it is not currently being displayed
-         	# we show the dialogue
-         	# Also, the "character" variable must exist, as it indicates that the
-         	# main character is in the NPC's area
+		 	# we show the dialogue
+		 	# Also, the "character" variable must exist, as it indicates that the
+		 	# main character is in the NPC's area
 		_show_dialogue()
 
 # We set a new dialogue and show it
