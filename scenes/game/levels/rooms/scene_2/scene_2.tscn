@@ -178,22 +178,22 @@ position = Vector2(897, 139)
 
 [node name="FrontPalm" type="Node2D" parent="Objects"]
 
-[node name="FrontPalmTree" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(623, 376)
 
-[node name="FrontPalmTree2" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree2" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(15, 408)
 
-[node name="FrontPalmTree3" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree3" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(1103, 312)
 
-[node name="FrontPalmTree4" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree4" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(143, 273)
 
-[node name="FrontPalmTree6" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree6" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(431, 152)
 
-[node name="FrontPalmTree5" parent="Objects/FrontPalm" instance=ExtResource("4_6u8cq")]
+[node name="FrontPalmTree5" parent="Objects/FrontPalm" groups=["trees"] instance=ExtResource("4_6u8cq")]
 position = Vector2(911, 535)
 
 [node name="Chest" type="Sprite2D" parent="Objects"]
@@ -203,6 +203,19 @@ texture = ExtResource("10_2jg0w")
 [node name="Flag" type="Sprite2D" parent="Objects"]
 position = Vector2(714, 370)
 texture = ExtResource("11_4ker5")
+
+[node name="Potions" type="Node2D" parent="Objects"]
+
+[node name="PowerUp" parent="Objects/Potions" instance=ExtResource("19_0ypyt")]
+position = Vector2(89, 434)
+animation = &"speed_potion"
+
+[node name="PowerUp2" parent="Objects/Potions" instance=ExtResource("19_0ypyt")]
+position = Vector2(234, 565)
+
+[node name="PowerUp3" parent="Objects/Potions" instance=ExtResource("19_0ypyt")]
+position = Vector2(-5, 435)
+animation = &"tree_potion"
 
 [node name="DieArea" type="Node2D" parent="."]
 
@@ -282,14 +295,3 @@ texture = SubResource("CompressedTexture2D_d1lya")
 z_index = -1
 position = Vector2(526, 297)
 animation = &"idle_left"
-
-[node name="PowerUp" parent="." instance=ExtResource("19_0ypyt")]
-position = Vector2(89, 434)
-animation = &"speed_potion"
-
-[node name="PowerUp2" parent="." instance=ExtResource("19_0ypyt")]
-position = Vector2(234, 565)
-
-[node name="PowerUp3" parent="." instance=ExtResource("19_0ypyt")]
-position = Vector2(143, 468)
-animation = &"tree_potion"

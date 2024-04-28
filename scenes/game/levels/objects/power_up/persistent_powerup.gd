@@ -11,6 +11,7 @@ var _dialogues = {
 	"green_bottle": "res://scenes/game/dialogues/dialogues/power_up/green_bottle.dialogue",
 }
 var _move: Node2D # To disable the character
+var _potion_time = 5.0
 
 
 # Initialization function
@@ -36,7 +37,7 @@ func _pick_up():
 	await animation_finished
 	visible = false
 	$Area/CollisionShape.disabled = true
-	await get_tree().create_timer(5.0).timeout
+	await get_tree().create_timer(_potion_time).timeout
 	$Area/CollisionShape.disabled = false
 	play(_animation)
 	visible = true
@@ -45,15 +46,18 @@ func _apply_potion(_animation):
 	match _animation:
 		"jump_potion":
 			_move._max_jumps = 3
-			await get_tree().create_timer(5.0).timeout
+			await get_tree().create_timer(_potion_time).timeout
 			_move._max_jumps = 2
 		"speed_potion":
 			_move.velocity = 200
-			await get_tree().create_timer(5.0).timeout
+			await get_tree().create_timer(_potion_time).timeout
 			_move.velocity = 100
 		"tree_potion":
-			#TODO enable tree collision
-			await get_tree().create_timer(5.0).timeout
-			#TODO disable tree collision
+			var _trees = $"../../FrontPalm".get_children()
+			for _tree in _trees:
+				_tree._enable_collision()
+			await get_tree().create_timer(_potion_time).timeout
+			for _tree in _trees:
+				_tree._disable_collision()
 			
 	

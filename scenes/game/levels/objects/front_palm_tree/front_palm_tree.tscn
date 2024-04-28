@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c2nps502udtd6"]
+[gd_scene load_steps=12 format=3 uid="uid://c2nps502udtd6"]
 
 [ext_resource type="Texture2D" uid="uid://8awnoujdi0oo" path="res://assets/sprites/treasure_hunters/palm_tree_island/sprites/front_palm_trees/front_palm_tree_top_01.png" id="1_gvuxi"]
 [ext_resource type="Texture2D" uid="uid://ch7ur25p23xx4" path="res://assets/sprites/treasure_hunters/palm_tree_island/sprites/front_palm_trees/front_palm_tree_top_02.png" id="2_ttu7x"]
@@ -42,9 +42,20 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bs8o"]
+size = Vector2(24, 2.5)
+
 [node name="FrontPalmTree" type="AnimatedSprite2D"]
-position = Vector2(623, 432)
+position = Vector2(626, 433)
 sprite_frames = SubResource("SpriteFrames_p8vj6")
 animation = &"idle_front"
 frame_progress = 0.626995
 script = ExtResource("5_kc2f4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -14.25)
+shape = SubResource("RectangleShape2D_0bs8o")
+disabled = true
+one_way_collision = true
