@@ -18,7 +18,6 @@ var points = {
 	"RedDiamond": 0,
 	"Bomb": 0,
 }
-
 # Auxiliary variables to change the score of a type of collectible object
 var _number_1: TextureRect
 var _number_2: TextureRect
@@ -33,6 +32,8 @@ var _index_number_0 = 17
 @onready var bar = $LifeBar/Bar
 @onready var point_group = $PointGroup
 @onready var bomb_group = $LifeBar/Bomb
+@onready var timer = $TimerDisplay/Timer
+@onready var time_display = $TimerDisplay
 
 
 # Initialization function
@@ -150,3 +151,17 @@ func _get_text_region(position: int):
 			y += delta # We move to the next row
 			
 	return Rect2(x, y, w, h)
+	
+		
+func _process(delta):
+	time_display.text = "%s" % ceil($TimerDisplay/Timer.time_left)
+	if timer.time_left == 0:
+		_end_level()
+		
+		
+func _end_level():
+	remove_life(500)
+	timer.stop()
+	timer.wait_time = 20
+	timer.start()
+	
