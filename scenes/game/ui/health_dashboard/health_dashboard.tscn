@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bbdmu0jrh4l4o"]
+[gd_scene load_steps=35 format=3 uid="uid://bbdmu0jrh4l4o"]
 
 [ext_resource type="Script" path="res://scenes/game/ui/health_dashboard/health_dashboard.gd" id="1_rufnl"]
 [ext_resource type="Texture2D" uid="uid://cl5b1weh62et3" path="res://assets/sprites/treasure_hunters/wood_and_paper_ui/sprites/life_bars/big_bars/1.png" id="2_q6wv6"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d3bljsqlyvvf1" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/blue_diamond/01.png" id="9_culmi"]
 [ext_resource type="Texture2D" uid="uid://dag1d05f4evdq" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/green_diamond/01.png" id="10_fhwqc"]
 [ext_resource type="Texture2D" uid="uid://xiw4qwa52ual" path="res://assets/sprites/treasure_hunters/pirate_treasure/sprites/red_diamond/01.png" id="11_7u8si"]
+[ext_resource type="FontFile" uid="uid://dregmkvncw55k" path="res://assets/fonts/press_Sstart_2p/PressStart2P-Regular.ttf" id="13_1ail3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jphx6"]
 atlas = ExtResource("7_kitrq")
@@ -464,3 +465,23 @@ offset_right = 234.0
 offset_bottom = 49.0
 scale = Vector2(0.9, 0.9)
 texture = SubResource("AtlasTexture_anbyg")
+
+[node name="TimerDisplay" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -105.0
+offset_right = 105.0
+offset_bottom = 157.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("13_1ail3")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Timer" type="Timer" parent="TimerDisplay"]
+wait_time = 15.0
+one_shot = true
+autostart = true

@@ -9,6 +9,8 @@ extends Node2D
 func _ready():
 	if not character:
 		set_process(false)
+	
+	
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

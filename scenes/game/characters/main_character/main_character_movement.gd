@@ -59,6 +59,10 @@ func _ready():
 func _physics_process(_delta):
 	_move(_delta)
 	
+func _process(delta):
+	if HealthDashboard.life == 0:
+		_died = true
+	
 
 func _unhandled_input(event):
 	# When the x key is pressed, we attack	
